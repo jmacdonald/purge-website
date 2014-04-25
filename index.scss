@@ -1,0 +1,77 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "bitters/bitters";
+
+body {
+  margin: 0px;
+
+  section {
+    @include outer-container;
+    border: 1px solid #ccc;
+    border-width: 0px 1px;
+
+    h2 {
+      padding: 25px 0 15px 0;
+    }
+    
+    &#hero {
+      background-color: #A11312;
+      color: white;
+
+      .icon {
+        @include span-columns(6);
+        text-align: right;
+      }
+
+      .title {
+        @include span-columns(6);
+      }
+    }
+
+    &#features {
+      text-align: center;
+      background-color: #D9B690;
+
+      .feature {
+        @include span-columns(4);
+        padding: 25px;
+        font-size: 0.8em;
+
+        h4 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &#usage {
+      text-align: center;
+
+      .description {
+        @include span-columns(3);
+        @include shift(3);
+      }
+
+      .keys {
+        @include span-columns(4);
+
+        th {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  table {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  footer {
+    @include outer-container;
+
+    text-align: center;
+    padding: 50px 0px;
+    color: white;
+    background-color: #430D0B;
+  }
+}
