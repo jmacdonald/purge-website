@@ -2,43 +2,117 @@
 @import "neat/neat";
 @import "bitters/bitters";
 
+@include font-face(LeagueGothic, 'fonts/leaguegothic-regular-webfont');
+@include font-face(GandhiSans, 'fonts/gandhisans-regular-webfont');
+
 body {
   margin: 0px;
+  font-family: GandhiSans, sans-serif;
+  font-size: 16px;
 
   section {
     @include outer-container;
-    border: 1px solid #ccc;
-    border-width: 0px 1px;
+    margin-top: 60px;
+
+    hr {
+      margin: 0px;
+    }
 
     h2 {
-      padding: 25px 0 15px 0;
+      font-family: LeagueGothic, sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #AAA;
+      position: relative;
+      top: -12px;
+      padding: 0 20px;
+      margin-bottom: 50px;
+      
+      span {
+        background-color: white;
+        padding: 15px;
+      }
+    }
+
+    .icon {
+      margin: 0 auto;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     
     &#hero {
-      background-color: #A11312;
-      color: white;
+      .logo {
+        width: 400px;
+        height: 260px;
+        margin-bottom: 20px;
+        background-image: url(images/logo.png);
 
-      .icon {
-        @include span-columns(6);
-        text-align: right;
+        @include hidpi() {
+          background-image: url(images/logo@2x.png);
+        }
       }
 
-      .title {
-        @include span-columns(6);
+      .summary {
+        color: #aaa;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 20px;
       }
     }
 
     &#features {
       text-align: center;
-      background-color: #D9B690;
 
       .feature {
         @include span-columns(4);
         padding: 25px;
         font-size: 0.8em;
 
-        h4 {
+        h3 {
+          font-size: 36px;
           margin-bottom: 10px;
+          font-family: LeagueGothic;
+          text-transform: uppercase;
+        }
+
+        .icon {
+          &.size-is-everything {
+            width: 125px;
+            height: 140px;
+            margin-top: -40px;
+            margin-bottom: 10px;
+            background-image: url(images/size_is_everything.png);
+
+            @include hidpi() {
+              background-image: url(images/size_is_everything@2x.png);
+            }
+          }
+
+          &.text-based-ui {
+            width: 150px;
+            height: 90px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background-image: url(images/text_based_ui.png);
+
+            @include hidpi() {
+              background-image: url(images/text_based_ui@2x.png);
+            }
+          }
+
+          &.quick-delete {
+            width: 100px;
+            height: 150px;
+            margin-top: -42px;
+            margin-bottom: 2px;
+            background-image: url(images/quick_delete.png);
+
+            @include hidpi() {
+              background-image: url(images/quick_delete@2x.png);
+            }
+          }
         }
       }
     }
@@ -47,16 +121,11 @@ body {
       text-align: center;
 
       .description {
-        @include span-columns(3);
-        @include shift(3);
+        font-style: italic;
       }
 
       .keys {
-        @include span-columns(4);
-
-        th {
-          text-align: center;
-        }
+        margin: 50px 0;
       }
     }
   }
@@ -67,8 +136,6 @@ body {
   }
 
   footer {
-    @include outer-container;
-
     text-align: center;
     padding: 50px 0px;
     color: white;

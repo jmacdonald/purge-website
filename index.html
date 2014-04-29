@@ -10,38 +10,36 @@
   </head>
   <body>
     <section id="hero">
-      <div class="icon">
-        <img src="images/icon.png" />
-      </div>
+      <div class="icon logo"></div>
 
-      <div class="title">
-        <h1>Liberator</h1>
-        Find and destroy large files and folders using a text-based interface.
+      <div class="summary">
+        Quickly expel large files &amp; folders from your filesystem.
       </div>
     </section>
 
     <section id="features">
-      <h2>Features</h2>
+      <hr />
+      <h2><span>Features</span></h2>
 
       <div class="feature">
-        <img src="images/feature.png" />
-        <h4>Size is Everything</h4>
+        <div class="icon size-is-everything"></div>
+        <h3>Size is Everything</h3>
         <p>
           Liberator calculates sizes for all of your files &amp; folders, and presents them sorted by size.
         </p>
       </div>
 
       <div class="feature">
-        <img src="images/feature.png" />
-        <h4>Text-Based UI</h4>
+        <div class="icon text-based-ui"></div>
+        <h3>Text-Based UI</h3>
         <p>
           No X11 or web server required. Liberator uses a text-based interface that works perfectly over SSH.
         </p>
       </div>
 
       <div class="feature">
-        <img src="images/feature.png" />
-        <h4>Quick Delete</h4>
+        <div class="icon quick-delete"></div>
+        <h3>Quick Delete</h3>
         <p>
           Found something taking up too much space? Delete it without ever having to leave the app.
         </p>
@@ -49,26 +47,16 @@
     </section>
 
     <section id="usage">
-      <h2>Usage</h2>
+      <hr />
+      <h2><span>Usage</span></h2>
 
       <p class="description">Liberator takes its control cue from Vim, using the home keys to navigate your filesystem.</p>
 
-      <div class="keys">
-        <table>
-          <thead>
-            <tr>
-              <th>Key</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>j</td>
-              <td>Select the next entry.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <p class="keys">
+        Use <strong>j</strong>, <strong>k</strong>, <strong>h</strong>, and <strong>enter</strong> to move up, down, out, and into directory entries.
+        <br />
+        Use <strong>x</strong> to delete the selected entry.
+      </p>
     </section>
 
     <footer>
