@@ -300,19 +300,32 @@ body {
       margin: -68px auto 20px auto;
       text-align: right;
       z-index: 40;
-      position: relative; }
+      position: relative;
+      color: #777; }
+      body section#hero .download > * {
+        border: 1px solid #ccc;
+        border-radius: 3px; }
       body section#hero .download .button {
-        color: #777;
         padding: 3px 10px;
         display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 3px;
         box-shadow: 0 0 4px #ddd;
         background-color: #fafafa;
         margin-right: 4px; }
         body section#hero .download .button:hover {
           cursor: pointer;
           background-color: #fff; }
+      body section#hero .download ul {
+        right: 4px;
+        z-index: 20;
+        width: 150px;
+        margin-top: -1px;
+        position: absolute;
+        background-color: white;
+        border-top-right-radius: 0px; }
+        body section#hero .download ul li {
+          padding: 2px 10px; }
+          body section#hero .download ul li:nth-child(n+2) {
+            border-top: 1px solid #ccc; }
     body section#hero .summary {
       color: #aaa;
       font-size: 18px;
