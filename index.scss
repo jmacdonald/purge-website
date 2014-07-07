@@ -13,7 +13,7 @@ body {
 
   section {
     @include outer-container;
-    margin-top: 60px;
+    margin-top: 50px;
 
     hr {
       margin: 0px;
@@ -59,23 +59,29 @@ body {
 
       .download {
         width: 400px;
-        margin: -68px auto 20px auto;
+        margin: -66px auto 20px auto;
         text-align: right;
-        z-index: 40;
         position: relative;
         color: #777;
+        z-index: 40;
+        position: relative;
 
         & > * {
           border: 1px solid #ccc;
           border-radius: 3px;
+          box-shadow: 0 0 4px #ddd;
         }
 
         .button {
           padding: 3px 10px;
           display: inline-block;
-          box-shadow: 0 0 4px #ddd;
           background-color: #fafafa;
           margin-right: 4px;
+
+          &.connected {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+          }
 
           &:hover {
             cursor: pointer;
@@ -85,7 +91,6 @@ body {
 
         ul {
           right: 4px;
-          z-index: 20;
           width: 150px;
           margin-top: -1px;
           position: absolute;
@@ -98,16 +103,21 @@ body {
             &:nth-child(n+2) {
               border-top: 1px solid #ccc;
             }
+
+            a {
+              display: block;
+              color: #654370;
+            }
           }
         }
       }
 
       .summary {
         color: #aaa;
-        font-size: 18px;
         font-style: italic;
         text-align: center;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
       }
     }
 
@@ -170,7 +180,7 @@ body {
       text-align: center;
 
       .description {
-        font-style: italic;
+        font-size: 14px;
       }
 
       .keys {
@@ -182,11 +192,26 @@ body {
   table {
     border: 1px solid #ccc;
     border-radius: 6px;
+    width: 400px;
+    font-size: 14px;
+    margin: 0 auto;
+    box-shadow: 0 0 4px #ddd;
+
+    th:first-child, td:first-child {
+      width: 100px;
+      border-right: 1px solid #ccc;
+    }
+
+    th {
+      text-align: center;
+      background-color: #fafafa;
+      border-bottom-color: #e6e6e6;
+    }
   }
 
   footer {
-    text-align: center;
-    padding: 50px 0px;
+    text-align: right;
+    padding: 50px 50px;
     color: white;
     background-color: #430D0B;
   }

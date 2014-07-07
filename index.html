@@ -27,7 +27,7 @@
       </div>
 
       <div class="summary">
-        Quickly expel large files &amp; folders from your filesystem.
+        Quickly find and expel large files &amp; folders from your filesystem.
       </div>
     </section>
 
@@ -55,7 +55,7 @@
         <div class="icon quick-delete"></div>
         <h3>Quick Delete</h3>
         <p>
-          Found something taking up too much space? Delete it without ever having to leave the app.
+          Found something taking up too much space? Easily delete it without ever having to leave the app.
         </p>
       </div>
     </section>
@@ -64,17 +64,50 @@
       <hr />
       <h2><span>Usage</span></h2>
 
-      <p class="description">Liberator takes its control cue from Vim, using the home keys to navigate your filesystem.</p>
-
-      <p class="keys">
-        Use <strong>j</strong>, <strong>k</strong>, <strong>h</strong>, and <strong>enter</strong> to move up, down, out, and into directory entries.
-        <br />
-        Use <strong>x</strong> to delete the selected entry.
-      </p>
+      <div class="keys">
+        <table>
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>j</td>
+              <td>Select the next entry in the list.</td>
+            </tr>
+            <tr>
+              <td>k</td>
+              <td>Select the previous entry in the list.</td>
+            </tr>
+            <tr>
+              <td>&lt;enter&gt;</td>
+              <td>Enter the selected directory.</td>
+            </tr>
+            <tr>
+              <td>h</td>
+              <td>Navigate to the parent directory.</td>
+            </tr>
+            <tr>
+              <td>s</td>
+              <td>Sort the entries by size.</td>
+            </tr>
+            <tr>
+              <td>x</td>
+              <td>Delete the selected entry.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <footer>
-      <small>&copy; 2014 Jordan MacDonald</small>
+      <small>
+        &copy; 2014 <a href="https://twitter.com/wastedintel" />Jordan MacDonald</a>
+        <br />
+        Purge is available under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a> license.
+      </small>
     </footer>
   </body>
 </html>
