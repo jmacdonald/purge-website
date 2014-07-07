@@ -41,6 +41,17 @@ body {
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    &#github {
+      position: absolute;
+      margin: 0px;
+      top: 15px;
+      right: 15px;
+
+      a {
+        color: #666;
+      }
+    }
     
     &#hero {
       .logo {

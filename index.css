@@ -284,6 +284,13 @@ body {
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center; }
+    body section#github {
+      position: absolute;
+      margin: 0px;
+      top: 15px;
+      right: 15px; }
+      body section#github a {
+        color: #666; }
     body section#hero .logo {
       width: 400px;
       height: 260px;
