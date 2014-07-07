@@ -48,9 +48,36 @@ body {
         height: 260px;
         margin-bottom: 20px;
         background-image: url(images/logo.png);
+        z-index: 50;
+        position: relative;
+        pointer-events: none;
 
         @include hidpi() {
           background-image: url(images/logo@2x.png);
+        }
+      }
+
+      .download {
+        width: 400px;
+        margin: -68px auto 20px auto;
+        text-align: right;
+        z-index: 40;
+        position: relative;
+
+        .button {
+          color: #777;
+          padding: 3px 10px;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          box-shadow: 0 0 4px #ddd;
+          background-color: #fafafa;
+          margin-right: 4px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #fff;
+          }
         }
       }
 
