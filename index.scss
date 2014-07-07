@@ -110,14 +110,23 @@ body {
 
           li {
             padding: 2px 10px;
+            background-color: #fafafa;
 
             &:nth-child(n+2) {
               border-top: 1px solid #ccc;
             }
 
+            &:hover {
+              background-color: #fff;
+            }
+
             a {
               display: block;
               color: #654370;
+
+              &:hover {
+                color: #A972BB;
+              }
             }
           }
         }
