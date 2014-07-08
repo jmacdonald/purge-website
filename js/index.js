@@ -13,4 +13,9 @@ $(document).ready(function() {
   $('.keys').waypoint(function() {
     $('.keys').transition({ opacity: 1, top: 0 }, 900);
   }, { offset: '50%' });
+
+  // Fade features in automatically.
+  $('.feature').each(function(index, feature) {
+    $(feature).transition({ opacity: 1, delay: 500+index*800}, 1000);
+  });
 });

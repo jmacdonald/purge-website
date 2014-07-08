@@ -155,6 +155,7 @@ body {
         @include span-columns(4);
         padding: 25px;
         font-size: 0.8em;
+        opacity: 0;
 
         h3 {
           color: #444;

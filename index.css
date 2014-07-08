@@ -363,7 +363,8 @@ body {
         margin-right: 2.35765%;
         width: 31.76157%;
         padding: 25px;
-        font-size: 0.8em; }
+        font-size: 0.8em;
+        opacity: 0; }
         body section#features .feature:last-child {
           margin-right: 0; }
         body section#features .feature h3 {
