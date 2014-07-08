@@ -10,9 +10,10 @@ $(document).ready(function() {
     }
   });
 
+  // Fade keymap in when it's scrolled into view.
   $('.keys').waypoint(function() {
     $('.keys').transition({ opacity: 1, top: 0 }, 900);
-  }, { offset: '50%' });
+  }, { offset: '75%' });
 
   // Fade features in automatically.
   $('.feature').each(function(index, feature) {
