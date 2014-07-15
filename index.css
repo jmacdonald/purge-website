@@ -447,4 +447,8 @@ body {
     text-align: right;
     padding: 50px 50px;
     color: white;
-    background-color: #654370; }
+    background-color: #654370;
+    border-top: 2px solid #b190bc;
+    background-color: #483050;
+    background-image: -webkit-linear-gradient(#483050, #654370);
+    background-image: linear-gradient(#483050, #654370); }
