@@ -411,12 +411,22 @@ body {
       body section#usage .screenshot {
         float: left;
         width: 450px;
+        height: 274px;
         margin: 20px 0 0 59px;
         border: 6px solid white;
-        box-shadow: 0 0 0 1px #ccc, 0 0 4px #aaa; }
+        box-shadow: 0 0 0 1px #ccc, 0 0 4px #aaa;
+        opacity: 0;
+        position: relative;
+        right: 75px; }
       body section#usage .keys {
         float: right;
         margin: 0 111px 50px 0;
+        opacity: 0;
+        position: relative;
+        left: 75px; }
+      body section#usage p {
+        clear: both;
+        margin-bottom: 60px;
         opacity: 0;
         position: relative;
         top: 75px; }

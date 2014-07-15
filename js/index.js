@@ -10,13 +10,15 @@ $(document).ready(function() {
     }
   });
 
-  // Fade keymap in when it's scrolled into view.
-  $('.keys').waypoint(function() {
-    $('.keys').transition({ opacity: 1, top: 0 }, 900);
+  // Fade-in usage information.
+  $('.screenshot').waypoint(function() {
+    $('.screenshot').transition({ opacity: 1, right: 0 }, 900);
+    $('.keys').transition({ opacity: 1, left: 0 }, 900);
+    $('#usage p').transition({ opacity: 1, top: 0 }, 900);
   }, { offset: '75%' });
 
   // Fade features in automatically.
   $('.feature').each(function(index, feature) {
-    $(feature).transition({ opacity: 1, delay: 500+index*800}, 1000);
+    $(feature).transition({ opacity: 1, delay: 400+index*500}, 1000);
   });
 });
