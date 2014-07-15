@@ -14,7 +14,7 @@ $(document).ready(function() {
   $('.screenshot').waypoint(function() {
     $('.screenshot').transition({ opacity: 1, right: 0 }, 900);
     $('.keys').transition({ opacity: 1, left: 0 }, 900);
-    $('#usage p').transition({ opacity: 1, top: 0 }, 900);
+    $('#usage p').transition({ opacity: 1 }, 1900);
   }, { offset: '75%' });
 
   // Fade features in automatically.
