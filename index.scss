@@ -275,5 +275,14 @@ body {
     background-color: $purple;
     border-top: 2px solid lighten($purple, 30%);
     @include linear-gradient(darken($purple, 10%), $purple);
+
+    a {
+      color: white;
+
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
   }
 }
