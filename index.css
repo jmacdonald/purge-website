@@ -366,8 +366,8 @@ body {
         display: block;
         margin-right: 2.35765%;
         width: 31.76157%;
-        padding: 25px;
-        font-size: 0.8em;
+        padding: 25px 0;
+        font-size: 0.9em;
         opacity: 0; }
         body section#features .feature:last-child {
           margin-right: 0; }

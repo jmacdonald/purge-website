@@ -154,8 +154,8 @@ body {
 
       .feature {
         @include span-columns(4);
-        padding: 25px;
-        font-size: 0.8em;
+        padding: 25px 0;
+        font-size: 0.9em;
         opacity: 0;
 
         h3 {
