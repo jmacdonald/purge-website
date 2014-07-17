@@ -7,6 +7,8 @@
 @include font-face(GandhiSans, 'fonts/gandhisans-regular-webfont');
 
 $purple: #654370;
+$mobile: max-width 700px;
+$small-desktop: max-width 1050px;
 
 body {
   margin: 0px;
@@ -154,6 +156,10 @@ body {
 
       .feature {
         @include span-columns(4);
+        @include breakpoint($mobile) {
+          @include span-columns(10);
+          @include shift(1);
+        }
         padding: 25px 0;
         font-size: 0.9em;
         opacity: 0;
@@ -214,10 +220,19 @@ body {
       }
 
       .screenshot {
-        float: left;
-        width: 450px;
-        height: 274px;
-        margin: 20px 0 0 59px;
+        @include span-columns(4);
+        @include shift(1);
+
+        @include breakpoint($small-desktop) {
+          @include span-columns(6);
+          @include shift(3);
+        }
+
+        @include breakpoint($mobile) {
+          @include span-columns(10);
+          @include shift(1);
+        }
+        margin-top: 20px;
         border: 6px solid white;
         box-shadow: 0 0 0 1px #ccc, 0 0 4px #aaa;
 
@@ -228,8 +243,21 @@ body {
       }
 
       .keys {
-        float: right;
-        margin: 0 111px 50px 0;
+        @include span-columns(4);
+        @include shift(2);
+
+        @include breakpoint($small-desktop) {
+          @include span-columns(6);
+          @include shift(3);
+          margin-top: 40px;
+        }
+
+        @include breakpoint($mobile) {
+          @include span-columns(10);
+          @include shift(1);
+          margin-top: 40px;
+        }
+        margin-bottom: 50px;
 
         // Animation-related styles.
         opacity: 0;
@@ -251,9 +279,7 @@ body {
   table {
     border: 1px solid #ccc;
     border-radius: 6px;
-    width: 400px;
     font-size: 14px;
-    margin: 0 auto;
     box-shadow: 0 0 4px #ddd;
 
     th:first-child, td:first-child {
