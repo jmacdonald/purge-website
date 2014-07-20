@@ -362,7 +362,8 @@ body {
       text-align: center;
       margin-bottom: 30px; }
     body section#features {
-      text-align: center; }
+      text-align: center;
+      margin-top: 0; }
       body section#features .feature {
         float: left;
         display: block;

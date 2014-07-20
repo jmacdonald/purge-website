@@ -3,6 +3,7 @@ $(document).ready(function() {
     if( $('.download ul').css('opacity') == '0' ) {
       $('.download ul').transition({ opacity: 1, marginTop: '30px' }, 350);
       $('.download #checksum').transition({ opacity: 1 }, 350);
+      $('#features').transition({ marginTop: 50 }, 350);
 
       // Highlight the first download option.
       $('.download #releases a').first().mouseenter();
@@ -10,6 +11,7 @@ $(document).ready(function() {
     else {
       $('.download ul').transition({ opacity: 0, marginTop: 0 }, 350);
       $('.download #checksum').transition({ opacity: 0 }, 350);
+      $('#features').transition({ marginTop: 0 }, 350);
     }
   });
 
