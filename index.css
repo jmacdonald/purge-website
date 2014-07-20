@@ -345,6 +345,20 @@ body {
             body section#hero .download ul li a.highlight {
               color: #b190bc;
               border-bottom: 1px solid #b190bc; }
+            body section#hero .download ul li a span.freebsd {
+              background-image: url(images/freebsd.png);
+              background-repeat: no-repeat;
+              background-size: 16px;
+              background-position: 0 -1px, center;
+              width: 16px;
+              height: 16px;
+              display: inline-block;
+              position: relative;
+              top: 2px;
+              margin-right: 1px; }
+              @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+                body section#hero .download ul li a span.freebsd {
+                  background-image: url(images/freebsd@2x.png); } }
       body section#hero .download #checksum {
         color: gray;
         font-size: small;
@@ -358,7 +372,6 @@ body {
           text-decoration: underline; }
     body section#hero .summary {
       color: #aaa;
-      font-style: italic;
       text-align: center;
       margin-bottom: 30px; }
     body section#features {
