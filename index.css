@@ -345,6 +345,11 @@ body {
             body section#hero .download ul li a.highlight {
               color: #b190bc;
               border-bottom: 1px solid #b190bc; }
+              body section#hero .download ul li a.highlight span.freebsd {
+                background-image: url(images/freebsd_light.png); }
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+                  body section#hero .download ul li a.highlight span.freebsd {
+                    background-image: url(images/freebsd_light@2x.png); } }
             body section#hero .download ul li a span.freebsd {
               background-image: url(images/freebsd.png);
               background-repeat: no-repeat;

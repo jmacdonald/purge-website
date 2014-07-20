@@ -118,6 +118,14 @@ body {
               &.highlight {
                 color: lighten($purple, 30%);
                 border-bottom: 1px solid lighten($purple, 30%);
+
+                span.freebsd {
+                  background-image: url(images/freebsd_light.png);
+
+                  @include hidpi() {
+                    background-image: url(images/freebsd_light@2x.png);
+                  }
+                }
               }
               
               span.freebsd {
