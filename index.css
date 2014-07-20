@@ -315,7 +315,7 @@ body {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none; }
-        body section#hero .download .button:hover {
+        body section#hero .download .button:hover, body section#hero .download .button.active {
           cursor: pointer;
           -webkit-animation-name: highlight;
           -moz-animation-name: highlight;

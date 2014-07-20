@@ -84,7 +84,7 @@ body {
           border-radius: 4px;
           @include user-select(none);
 
-          &:hover {
+          &:hover, &.active {
             cursor: pointer;
             @include animation-name(highlight);
             @include animation-duration(0.2s);
