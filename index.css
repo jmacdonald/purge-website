@@ -340,9 +340,22 @@ body {
           body section#hero .download ul li:hover {
             background-color: #fff; }
           body section#hero .download ul li a {
-            color: #654370; }
-            body section#hero .download ul li a:hover {
-              color: #A972BB; }
+            color: #654370;
+            display: inline-block; }
+            body section#hero .download ul li a.highlight {
+              color: #b190bc;
+              border-bottom: 1px solid #b190bc; }
+      body section#hero .download #checksum {
+        color: gray;
+        font-size: small;
+        margin-top: 10px;
+        display: inline-block;
+        opacity: 0; }
+        body section#hero .download #checksum::before {
+          content: 'SHA 256:';
+          margin-right: 3px;
+          display: inline-block;
+          text-decoration: underline; }
     body section#hero .summary {
       color: #aaa;
       font-style: italic;

@@ -2,10 +2,28 @@ $(document).ready(function() {
   $('.download .button').click(function() {
     if( $('.download ul').css('opacity') == '0' ) {
       $('.download ul').transition({ opacity: 1, marginTop: '30px' }, 350);
+      $('.download #checksum').transition({ opacity: 1 }, 350);
+
+      // Highlight the first download option.
+      $('.download #releases a').first().mouseenter();
     }
     else {
       $('.download ul').transition({ opacity: 0, marginTop: 0 }, 350);
+      $('.download #checksum').transition({ opacity: 0 }, 350);
     }
+  });
+
+  $('.download #releases a').bind('mouseenter click', function(event) {
+    link = $(this);
+
+    // Un-highlight all other download links.
+    $('.download #releases a').removeClass('highlight');
+
+    // Highlight this download link.
+    link.addClass('highlight');
+
+    // Populate the checksum area with the right value.
+    $('#checksum').html(link.attr('data-checksum'));
   });
 
   // Fade-in usage information.

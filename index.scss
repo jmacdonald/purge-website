@@ -113,11 +113,28 @@ body {
 
             a {
               color: $purple;
+              display: inline-block;
 
-              &:hover {
-                color: #A972BB;
+              &.highlight {
+                color: lighten($purple, 30%);
+                border-bottom: 1px solid lighten($purple, 30%);
               }
             }
+          }
+        }
+
+        #checksum {
+          color: gray;
+          font-size: small;
+          margin-top: 10px;
+          display: inline-block;
+          opacity: 0;
+
+          &::before {
+            content: 'SHA 256:';
+            margin-right: 3px;
+            display: inline-block;
+            text-decoration: underline;
           }
         }
       }
