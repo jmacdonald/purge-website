@@ -294,7 +294,7 @@ body {
     body section#hero .logo {
       width: 400px;
       height: 260px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       background-image: url(images/logo.png);
       z-index: 50;
       position: relative;
@@ -303,34 +303,34 @@ body {
         body section#hero .logo {
           background-image: url(images/logo@2x.png); } }
     body section#hero .download {
-      width: 400px;
-      margin: -66px auto 20px auto;
-      text-align: right;
-      position: relative;
-      color: #777;
-      z-index: 40;
-      position: relative; }
-      body section#hero .download > * {
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        box-shadow: 0 0 4px #ddd; }
+      text-align: center; }
       body section#hero .download .button {
-        padding: 3px 10px;
+        font-size: 16px;
+        padding: 7px 18px 6px 16px;
         display: inline-block;
-        background-color: #fafafa;
-        margin-right: 4px;
-        position: relative;
-        z-index: 30;
+        color: white;
+        background-color: #654370;
+        border-radius: 4px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none; }
-        body section#hero .download .button.connected {
-          border-bottom-left-radius: 0px;
-          border-bottom-right-radius: 0px; }
         body section#hero .download .button:hover {
           cursor: pointer;
-          background-color: #fff; }
+          -webkit-animation-name: highlight;
+          -moz-animation-name: highlight;
+          animation-name: highlight;
+          -webkit-animation-duration: 0.2s;
+          -moz-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+          -webkit-animation-direction: alternate;
+          -moz-animation-direction: alternate;
+          animation-direction: alternate;
+          -webkit-animation-fill-mode: forwards;
+          -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+        body section#hero .download .button span {
+          margin-right: 6px; }
       body section#hero .download ul {
         right: 4px;
         z-index: 20;
@@ -357,8 +357,7 @@ body {
       color: #aaa;
       font-style: italic;
       text-align: center;
-      margin-top: 30px;
-      margin-bottom: 10px; }
+      margin-bottom: 30px; }
     body section#features {
       text-align: center; }
       body section#features .feature {
@@ -516,3 +515,22 @@ body {
       body footer a:hover {
         color: white;
         text-decoration: underline; }
+
+@-webkit-keyframes highlight {
+  from {
+    background-color: #654370; }
+
+  to {
+    background-color: #825690; } }
+@-moz-keyframes highlight {
+  from {
+    background-color: #654370; }
+
+  to {
+    background-color: #825690; } }
+@keyframes highlight {
+  from {
+    background-color: #654370; }
+
+  to {
+    background-color: #825690; } }

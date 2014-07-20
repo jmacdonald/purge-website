@@ -61,7 +61,7 @@ body {
       .logo {
         width: 400px;
         height: 260px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         background-image: url(images/logo.png);
         z-index: 50;
         position: relative;
@@ -73,37 +73,27 @@ body {
       }
 
       .download {
-        width: 400px;
-        margin: -66px auto 20px auto;
-        text-align: right;
-        position: relative;
-        color: #777;
-        z-index: 40;
-        position: relative;
-
-        & > * {
-          border: 1px solid #ccc;
-          border-radius: 3px;
-          box-shadow: 0 0 4px #ddd;
-        }
+        text-align: center;
 
         .button {
-          padding: 3px 10px;
+          font-size: 16px;
+          padding: 7px 18px 6px 16px;
           display: inline-block;
-          background-color: #fafafa;
-          margin-right: 4px;
-          position: relative;
-          z-index: 30;
+          color: white;
+          background-color: $purple;
+          border-radius: 4px;
           @include user-select(none);
-
-          &.connected {
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-          }
 
           &:hover {
             cursor: pointer;
-            background-color: #fff;
+            @include animation-name(highlight);
+            @include animation-duration(0.2s);
+            @include animation-direction(alternate);
+            @include animation-fill-mode(forwards);
+          }
+
+          span {
+            margin-right: 6px;
           }
         }
 
@@ -146,8 +136,7 @@ body {
         color: #aaa;
         font-style: italic;
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
       }
     }
 
@@ -313,5 +302,15 @@ body {
         text-decoration: underline;
       }
     }
+  }
+}
+
+@include keyframes(highlight) {
+  from {
+    background-color: $purple;
+  }
+
+  to {
+    background-color: lighten($purple, 10%);
   }
 }
