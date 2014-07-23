@@ -7,6 +7,7 @@
 @include font-face(GandhiSans, 'fonts/gandhisans-regular-webfont');
 
 $purple: #654370;
+$light-grey: #eee;
 $mobile: max-width 700px;
 $small-desktop: max-width 1050px;
 
@@ -18,6 +19,7 @@ body {
   section {
     @include outer-container;
     margin-top: 50px;
+    text-align: center;
 
     hr {
       margin: 0px;
@@ -172,7 +174,6 @@ body {
     }
 
     &#features {
-      text-align: center;
       margin-top: 0;
 
       .feature {
@@ -234,8 +235,6 @@ body {
     }
 
     &#usage {
-      text-align: center;
-
       .description {
         font-size: 14px;
       }
@@ -315,6 +314,18 @@ body {
         opacity: 0;
         position: relative;
       }
+    }
+  }
+
+  #installation {
+    .command {
+      color: #666;
+      font-family: monospace;
+      background-color: #eee;
+      border-radius: 4px;
+      padding: 4px 10px;
+      margin: 0 auto 70px auto;
+      display: inline-block;
     }
   }
 
