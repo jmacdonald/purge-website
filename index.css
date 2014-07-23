@@ -518,46 +518,47 @@ body {
         border-bottom-color: #e6e6e6; }
     body section#usage p {
       clear: both;
-      margin-bottom: 60px;
-      opacity: 0;
-      position: relative; }
-  body #installation input.command {
-    color: #666;
-    font-family: monospace;
-    background-color: #eee;
-    border-radius: 4px;
-    padding: 4px 10px;
-    margin: 0 auto 70px auto;
-    display: inline-block;
+      margin-bottom: 20px;
+      opacity: 0; }
+  body #installation input, body #installation p {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-left: 17.05961%; }
+    body #installation input:last-child, body #installation p:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 1050px) {
+      body #installation input, body #installation p {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        body #installation input:last-child, body #installation p:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 700px) {
+      body #installation input, body #installation p {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        body #installation input:last-child, body #installation p:last-child {
+          margin-right: 0; } }
+  body #installation input.command {
+    color: #666;
+    font-family: monospace;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 4px 10px; }
     body #installation input.command:focus {
       outline: 0;
       border-color: #ccc;
       box-shadow: none; }
-    body #installation input.command:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 1050px) {
-      body #installation input.command {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
-        body #installation input.command:last-child {
-          margin-right: 0; } }
-    @media screen and (max-width: 700px) {
-      body #installation input.command {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
-        body #installation input.command:last-child {
-          margin-right: 0; } }
+  body #installation p {
+    clear: both;
+    margin-bottom: 70px; }
   body footer {
     text-align: right;
     padding: 50px 50px;
