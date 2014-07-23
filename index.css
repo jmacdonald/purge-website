@@ -406,12 +406,12 @@ body {
     body section#usage .description {
       font-size: 14px; }
     body section#usage .screenshot {
-      margin-top: 65px;
+      margin-top: 60px;
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
-      margin-left: 8.5298%;
+      width: 40.29137%;
+      margin-left: 4.2649%;
       border: 6px solid white;
       box-shadow: 0 0 0 1px #ccc, 0 0 4px #aaa;
       opacity: 0;
@@ -444,7 +444,7 @@ body {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      margin-left: 17.05961%;
+      margin-left: 12.79471%;
       display: table;
       margin-bottom: 50px;
       border: 1px solid #ccc;

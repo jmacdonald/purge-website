@@ -193,9 +193,9 @@ body {
       }
 
       .screenshot {
-        margin-top: 65px;
-        @include span-columns(4);
-        @include shift(1);
+        margin-top: 60px;
+        @include span-columns(5);
+        @include shift(0.5);
 
         @include media($small-desktop) {
           @include span-columns(6);
@@ -219,7 +219,7 @@ body {
 
       .keys {
         @include span-columns(4);
-        @include shift(2);
+        @include shift(1.5);
 
         @include media($small-desktop) {
           @include span-columns(6);
