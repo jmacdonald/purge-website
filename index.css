@@ -334,37 +334,6 @@ body {
           margin-right: 6px; }
       body section#hero .download ul {
         opacity: 0; }
-        body section#hero .download ul li {
-          display: inline; }
-          body section#hero .download ul li:nth-child(2) {
-            padding: 0 40px; }
-          body section#hero .download ul li:hover {
-            background-color: #fff; }
-          body section#hero .download ul li a {
-            color: #654370;
-            display: inline-block; }
-            body section#hero .download ul li a.highlight {
-              color: #b190bc;
-              border-bottom: 1px solid #b190bc; }
-              body section#hero .download ul li a.highlight span.freebsd {
-                background-image: url(images/freebsd_light.png); }
-                @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-                  body section#hero .download ul li a.highlight span.freebsd {
-                    background-image: url(images/freebsd_light@2x.png); } }
-            body section#hero .download ul li a span.freebsd {
-              background-image: url(images/freebsd.png);
-              background-repeat: no-repeat;
-              background-size: 16px;
-              background-position: 0 -1px, center;
-              width: 16px;
-              height: 16px;
-              display: inline-block;
-              position: relative;
-              top: 2px;
-              margin-right: 1px; }
-              @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-                body section#hero .download ul li a span.freebsd {
-                  background-image: url(images/freebsd@2x.png); } }
       body section#hero .download #checksum {
         color: gray;
         font-size: small;
@@ -556,9 +525,10 @@ body {
       outline: 0;
       border-color: #ccc;
       box-shadow: none; }
-  body #installation p {
+  body #installation ul {
     clear: both;
-    margin-bottom: 70px; }
+    display: inline-block;
+    margin: 20px 0 50px 0; }
   body footer {
     text-align: right;
     padding: 50px 50px;
@@ -573,6 +543,40 @@ body {
       body footer a:hover {
         color: white;
         text-decoration: underline; }
+
+ul.platforms li {
+  display: inline; }
+  ul.platforms li:nth-child(2) {
+    padding: 0 40px; }
+  ul.platforms li:hover {
+    background-color: #fff; }
+  ul.platforms li .platform {
+    color: #654370;
+    display: inline-block; }
+    ul.platforms li .platform:hover {
+      cursor: pointer; }
+    ul.platforms li .platform.highlight {
+      color: #b190bc;
+      border-bottom: 1px solid #b190bc; }
+      ul.platforms li .platform.highlight span.freebsd {
+        background-image: url(images/freebsd_light.png); }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+          ul.platforms li .platform.highlight span.freebsd {
+            background-image: url(images/freebsd_light@2x.png); } }
+    ul.platforms li .platform span.freebsd {
+      background-image: url(images/freebsd.png);
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: 0 -1px, center;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-right: 1px; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        ul.platforms li .platform span.freebsd {
+          background-image: url(images/freebsd@2x.png); } }
 
 @-webkit-keyframes highlight {
   from {

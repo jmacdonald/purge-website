@@ -30,6 +30,22 @@ $(document).ready(function() {
     $('#checksum').html(link.attr('data-checksum'));
   });
 
+  $('#installation .platform').bind('mouseenter click', function(event) {
+    platform = $(this);
+
+    // Un-highlight all other download platforms.
+    $('#installation .platform').removeClass('highlight');
+
+    // Highlight this download platform.
+    platform.addClass('highlight');
+
+    // Populate the input with the right value.
+    $('input.command').val(platform.attr('data-command'));
+  });
+
+  // Highlight the first platform.
+  $('#installation .platform').first().mouseenter();
+
   // Fade-in usage information.
   $('.screenshot').waypoint(function() {
     $('.screenshot').transition({ opacity: 1, right: 0 }, 900);

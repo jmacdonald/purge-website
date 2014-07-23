@@ -32,15 +32,15 @@
           <span class="fa fa-download"></span>
           Download
         </span>
-        <ul id="releases">
+        <ul id="releases" class="platforms">
           <li>
-            <a href="https://github.com/jmacdonald/purge/raw/master/releases/linux-amd64/purge" data-checksum="0a11b487be29f840093f5b8c6fef7c70b74b83b0b79c076445602c0f3a78d027"><span class="fa fa-linux"></span> Linux</a>
+            <a class="platform" href="https://github.com/jmacdonald/purge/raw/master/releases/linux-amd64/purge" data-checksum="0a11b487be29f840093f5b8c6fef7c70b74b83b0b79c076445602c0f3a78d027"><span class="fa fa-linux"></span> Linux</a>
           </li>
           <li>
-            <a href="https://github.com/jmacdonald/purge/raw/master/releases/freebsd-amd64/purge" data-checksum="fdeb8caa291d5ad8cda0dc4e1eea12778e1fa9750ac97bc72220d24288273a00"><span class="freebsd"></span> FreeBSD</a>
+            <a class="platform" href="https://github.com/jmacdonald/purge/raw/master/releases/freebsd-amd64/purge" data-checksum="fdeb8caa291d5ad8cda0dc4e1eea12778e1fa9750ac97bc72220d24288273a00"><span class="freebsd"></span> FreeBSD</a>
           </li>
           <li>
-            <a href="https://github.com/jmacdonald/purge/raw/master/releases/darwin-amd64/purge" data-checksum="64ab1f7d443c9b8ec65efbe1c55a4a56dec4d8464d36ca389741bf55f2afd3f7"><span class="fa fa-apple"></span> OS X</a>
+            <a class="platform" href="https://github.com/jmacdonald/purge/raw/master/releases/darwin-amd64/purge" data-checksum="64ab1f7d443c9b8ec65efbe1c55a4a56dec4d8464d36ca389741bf55f2afd3f7"><span class="fa fa-apple"></span> OS X</a>
           </li>
         </ul>
 
@@ -130,6 +130,24 @@
       <h2><span>Installation</span></h2>
 
       <input type="text" class="command" readonly value="wget linux.getpurge.com -O purge; chmod +x purge; ./purge" />
+
+      <ul id="installation_types" class="platforms">
+        <li>
+          <div class="platform" data-command="wget linux.getpurge.com -O purge; chmod +x purge; ./purge">
+            <span class="fa fa-linux"></span> Linux
+          </div>
+        </li>
+        <li>
+          <div href="#" class="platform" data-command="wget freebsd.getpurge.com -O purge; chmod +x purge; ./purge">
+            <span class="freebsd"></span> FreeBSD
+          </div>
+        </li>
+        <li>
+          <div href="#" class="platform" data-command="wget osx.getpurge.com -O purge; chmod +x purge; ./purge">
+            <span class="fa fa-apple"></span> OS X
+          </div>
+        </li>
+      </ul>
     </section>
 
     <footer>
