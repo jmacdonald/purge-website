@@ -41,4 +41,6 @@ $(document).ready(function() {
   $('.feature').each(function(index, feature) {
     $(feature).transition({ opacity: 1, delay: 400+index*500}, 1000);
   });
+
+  $('.command').click(function() { $('.command').select(); });
 });

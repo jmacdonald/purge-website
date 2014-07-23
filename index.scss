@@ -318,7 +318,7 @@ body {
   }
 
   #installation {
-    .command {
+    input.command {
       color: #666;
       font-family: monospace;
       background-color: #eee;
@@ -326,6 +326,25 @@ body {
       padding: 4px 10px;
       margin: 0 auto 70px auto;
       display: inline-block;
+
+      &:focus {
+        outline: 0;
+        border-color: #ccc;
+        box-shadow: none;
+      }
+
+      @include span-columns(8);
+      @include shift(2);
+
+      @include media($small-desktop) {
+        @include span-columns(10);
+        @include shift(1);
+      }
+
+      @include media($mobile) {
+        @include span-columns(10);
+        @include shift(1);
+      }
     }
   }
 
