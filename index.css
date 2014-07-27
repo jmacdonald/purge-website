@@ -514,7 +514,7 @@ body {
         padding: 10.5px; }
     body section#usage p {
       clear: both;
-      margin-bottom: 20px;
+      margin: 0 20px 20px 20px;
       opacity: 0; }
   body #installation input, body #installation p {
     float: left;
