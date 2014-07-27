@@ -510,6 +510,8 @@ body {
         text-align: center;
         background-color: #fafafa;
         border-bottom-color: #e6e6e6; }
+      body section#usage .keys td {
+        padding: 10.5px; }
     body section#usage p {
       clear: both;
       margin-bottom: 20px;
